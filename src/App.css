@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.todoApp {
+  /* position: absolute; */
+  border-radius: 10px;
+  width: 100%;
+  top: 30%;
+  left: 50%;
+  /* transform: translate(-50%, -60px); */
+}
+/* addTodo */
+.addTodo {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 0 5px;
+}
+.addTodo-title {
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  text-shadow: 3px 3px 3px rgb(146, 146, 146);
+}
+#addTodo-form {
+  display: flex;
+  gap: 5px;
+}
+.addTodo-area {
+  display: block;
+  width: 97%;
+  font-size: 25px;
+  height: 50px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  padding: 5px 5px 0px 5px;
+  resize: vertical;
+  outline: none;
+  border: none;
+  border: 3px solid rgb(170, 170, 170);
+  border-radius: 10px;
+}
+.addTodo-btn {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: rgb(155, 155, 255);
+  border-radius: 10px;
+}
+.addTodo-btn:hover {
+  background-color: rgb(126, 126, 255);
+}
+.addTodo-btn-line1 {
+  position: absolute;
+  background-color: white;
+  width: 3px;
+  height: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.addTodo-btn-line2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 20px;
+  height: 3px;
+}
+/* todos */
+.todo-box {
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+}
+.todo {
+  position: relative;
+  width: 97%;
+  min-height: 50px;
+  border: 3px solid rgb(170, 170, 170);
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 10fr);
+  align-items: center;
+  word-break: break-all;
+}
+.todo span {
+  outline: none;
+}
+.todo-btn {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: rgb(255, 62, 62);
+  border-radius: 10px;
+}
+.todo-btn:hover {
+  background-color: rgb(255, 17, 17);
+}
+.todo-btn-line1 {
+  position: absolute;
+  background-color: white;
+  width: 3px;
+  height: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.todo-btn-line2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate();
+  background-color: white;
+  width: 20px;
+  height: 3px;
+}
+.todo-checkbox {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+}
+.todo-change-btn {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  right: 10px;
+  padding: 6px;
+  border-radius: 100px;
+}
+.todo-change-btn:hover {
+  background-color: rgb(236, 236, 236);
+}
